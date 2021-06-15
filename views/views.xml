@@ -1,0 +1,61 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="items_price_privilege.list">
+      <field name="name">items_price_privilege list</field>
+      <field name="model">items_price_privilege.items_price_privilege</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="items_price_privilege.action_window">
+      <field name="name">items_price_privilege window</field>
+      <field name="res_model">items_price_privilege.items_price_privilege</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="items_price_privilege.action_server">
+      <field name="name">items_price_privilege server</field>
+      <field name="model_id" ref="model_items_price_privilege_items_price_privilege"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="items_price_privilege" id="items_price_privilege.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="items_price_privilege.menu_1" parent="items_price_privilege.menu_root"/>
+    <menuitem name="Menu 2" id="items_price_privilege.menu_2" parent="items_price_privilege.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="items_price_privilege.menu_1_list" parent="items_price_privilege.menu_1"
+              action="items_price_privilege.action_window"/>
+    <menuitem name="Server to list" id="items_price_privilege" parent="items_price_privilege.menu_2"
+              action="items_price_privilege.action_server"/>
+-->
+
+  </data>
+</odoo>

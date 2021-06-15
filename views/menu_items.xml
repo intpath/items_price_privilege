@@ -1,0 +1,8 @@
+<odoo>
+    <data>
+        <!-- to add group access to the inventory valuation menu item -->
+        <record model='ir.ui.menu' id='stock_account.menu_valuation'>
+            <field name="groups_id" eval="[(4,ref('items_price_privilege.group_inventory_valuation_privilege'))]"/>
+        </record>
+    </data>
+</odoo>
